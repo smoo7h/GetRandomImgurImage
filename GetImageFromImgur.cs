@@ -25,7 +25,7 @@ namespace GetRandomImage
             int rInt = r.Next(0, regex.Matches(input).Count); 
 
             string rndimg = regex.Matches(input)[rInt].ToString();
-
+            client.Dispose();
             return rndimg;
         }
     }
